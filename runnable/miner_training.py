@@ -38,7 +38,7 @@ if __name__ == "__main__":
         )
 
         # numbers of rows to use in each sequence
-        iter_add = 1000
+        iter_add = 2000
 
         print("current iteradd " + str(iter_add))
         print("next iter " + str(curr_iter))
@@ -67,6 +67,6 @@ if __name__ == "__main__":
             .set_window_size(100) \
             .set_learning_rate(0.0001) \
             .set_batch_size(iter_add) \
-            .set_model_dir(f'mining_models/model1.h5')
-        base_mining_model.train(prep_dataset, epochs=25)
+            .set_model_dir(f'mining_models/model_v4_6.h5')
+        base_mining_model.train(prep_dataset, epochs=250)
 
